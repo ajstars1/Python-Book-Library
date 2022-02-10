@@ -13,7 +13,7 @@ git clone https://github.com/ajstars1/Python-Book-library.git
 
 cd Python-Book-library/
 
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 python3 bookfinder.py
 ```
