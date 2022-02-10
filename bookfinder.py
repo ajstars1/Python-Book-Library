@@ -1,5 +1,5 @@
 from isbntools.app import *
-import Barcoder
+import BarcoderAPI
 bformat = ['default','labels','bibtex','csl', 'csv','json','opf','endnote','ris','refworks','msword']
 def get_isbn(name):
     isbn = isbn_from_words(name)
@@ -52,7 +52,7 @@ while 1:
         print("ISBN Number is "+ISBN)
     elif opt1==4:
         print("Scan the Barcode of Book!")
-        ISBN = Barcoder.main()
+        ISBN = BarcoderAPI.main()
         print("Select the Output format(recomended 2):")
         for i ,val in enumerate(bformat):
             print(f'{i+1}. {val}')
